@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	
+	<title>page web rally</title>
+    
+	<style>
+    .boutondiv
+    {
+        
+        margin:auto;
+        
+    }
+	.bouton 
+	{
+		display:inline-block;
+		text-decoration:none;
+		background-color:gray;
+		color :black;
+		cursor:pointer;
+        text-align: :center;
+        border-radius:2px;
+        
+	}
+	*
+	{
+		padding:0px;
+		margin:0px;
+	}
+	label
+	{
+		display:inline-block;
+		width:100px;
+		text-align:right;
+	}
+	div
+	{
+		margin-bottom:5px;
+		width:350px;
+	}
+	fieldset
+	{
+		width:350px;
+		margin-left:5px;
+		padding-top:5px;
+		margin: 0 auto;
+	}
+	legend
+	{
+		margin-left:10px;
+	}
+	h1
+	{
+		text-align:center;
+	}
+	.groupe-element
+	{
+		box-sizing:border-box;
+		width:340px;
+		padding:5px;
+		padding-top:5px;
+		margin-left:5px;
+	}
+	.groupe-element label
+	{
+		width:auto;
+	}
+	.groupe-element input[type=radio]
+	{
+		vertical-align:middle;
+		margin-right:20px;
+	}
+	.groupe-element input[type=checkbox]
+	{
+		vertical-align:middle;
+	}
+	input[type=submit]
+	{
+		display:block;
+		margin:5px auto;
+	}
+	
+	</style>
+</head>
+<body>
+	<h1>Inscription: Étape 1</h1>
+	<div class=boutondiv>
+	   <a class="bouton"href="Espace_Membre.html">Retour a la page de membres</a>
+	</div>
+	<form>
+		<fieldset>
+			<legend>Informations personnelles</legend>
+			<div>
+				<label for="champ-prenom">Prénom :</label>
+				<input type="text" name="prenom" id="champ-prenom" required>
+			</div>
+			
+			<div>
+				<label for="champ-nom">Nom :</label>
+				<input type="text" name="nom" id="champ-nom" required>
+			</div>
+			
+			<div>
+				<label for="champ-age">Age :</label>
+				<input type="text" name="age" id="champ-age">
+			</div>
+		
+		<fieldset class="groupe-element">
+		<legend>Genre</legend>
+			<div>
+				<label for="genre-homme">Homme</label>
+				<input type="radio" name="genres" value="homme" id="genre-homme"> 
+				
+				<label for="genre-femme">Femme</label>
+				<input type="radio" name="genres" value="femme" id="genre-femme"> 
+			</div>
+		</fieldset>
+		
+		<div>
+			<label for="genre-homme">Courriel : </label>
+			<input type="email" name="courriel" id="champ-courriel" required> 
+		</div>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Information de Sécurité</legend>
+			<div>
+				<label for="champ-mot-de-passe">Mot de passe :</label>
+				<input type="password" name="mot-de-passe" id="champ-mot-de-passe" required>
+				
+				<label for="champ-mot-de-passe-verif">Mot de passe &nbsp; (Encore) :</label>
+				<input type="password" name="mot-de-passe-verif" id="champ-mot-de-passe-verif" required>
+			</div>
+		</fieldset>
+    
+	<div class=boutondiv>
+		<a class="bouton"href="Etape2.html">valider vos information</a>
+		<input class="bouton" type="submit" value="poursuivre à l'étape
+		
+	</div>
+                                
+</body>
+</html>
