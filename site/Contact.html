@@ -107,6 +107,26 @@
             display: table-row;
         }
 	</style>
+        
+        
+<script>
+
+
+    function verifMail(champ)
+    {
+       var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+       if(!regex.test(champ.value))
+       {
+          surligne(champ, true);
+          return false;
+       }
+       else
+       {
+          surligne(champ, false);
+          return true;
+       }
+    }
+    </script>
 </head>
 <body>
 <nav>
@@ -135,7 +155,7 @@
 		</ul>
 	
 	</nav>
- <form  action="index.html">
+ <form action="index.html" name=conctact onsubmit="function verifMail(this);">
      <fieldset>
          
                     <container>
@@ -146,10 +166,19 @@
                             <label for="champ-prenom">Prénom :</label>
                             <input type="text" name="prenom" id="champ-prenom" required>
                         </div>
+                        
                         <div>
-                            <label for="champ-courriel">Courriel : </label>
-                            <input type="email" name="courriel" id="champ-courriel" required> 
+                           
+                            
+                            <label for="mailteste">Courriel : </label>
+                            <input  name="courriel"  value="Ex:polock@gmail.com" onclick="if(this.value == 'Ex:polock@gmail.com'){this.value=''};" onBlur="if(this.value == ''){this.value='Ex:polock@gmail.com';}" type="email"  id="Mail" required />
+                            <span id=Message></span>
                         </div>
+                       
+
+                       
+                    
+
                         <div class="champ-probleme">
                             <label for="champ-choix-probleme">Problème rencontré :</label>
                             <select name="choix-probleme" id="champ-probleme" required>
@@ -167,7 +196,7 @@
                         </div>
 
                         <div>
-                            <input class="bouton" type="submit" value="Envoyer">
+                            <input class="bouton" name="submit" type="submit" value="Envoyer">
                             <a class=sumbit href=index.html>Retour à la page principale</a>
                         </div>
                     </container>
