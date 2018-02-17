@@ -6,10 +6,29 @@
 	<title>page web rally</title>
     
 	<style>
+     h1
+	{
+		text-align:center;
+        color:white;
+	}
+    legend
+    {
+        
+       color:white;    
+        
+    }
+    div
+    {
+        
+        color:white;    
+    }
     .boutondiv
     {
         
         margin:auto;
+        display: block;
+        text-align: center;
+        
         
     }
 	.bouton 
@@ -41,10 +60,14 @@
 	}
 	fieldset
 	{
-		width:350px;
+		width:375px;
 		margin-left:5px;
 		padding-top:5px;
 		margin: 0 auto;
+        border-left-color: white;
+        border-right-color: white;
+        border-bottom-color: black;
+        border-top-color: black;
 	}
 	legend
 	{
@@ -57,10 +80,11 @@
 	.groupe-element
 	{
 		box-sizing:border-box;
-		width:340px;
+		width:auto;
 		padding:5px;
 		padding-top:5px;
-		margin-left:5px;
+		margin:5px;
+        
 	}
 	.groupe-element label
 	{
@@ -80,53 +104,60 @@
 		display:block;
 		margin:5px auto;
 	}
+    html
+    {
+     background:url('images/DiRT_Rally_Background_That_Car.jpg') no-repeat center center fixed;  
+        
+    
+        
+    }
 	
 	</style>
 </head>
 <body>
-	<h1>Inscription: Étape 2</h1>
+	<h1>Inscription rally: Étape 2</h1>
 	<div class=boutondiv>
 	   <a class="bouton"href="Etape1.html">Retour en arrière</a>
 	</div>
 	<form action="Etape3.html">
 		<fieldset>
-			<legend>Information de Scolarité</legend>
+			<legend>Information préférence</legend>
 			<div>
-				<label for="champ-choix-scolarite">Scolarité &nbsp; complété :</label>
-				<select name="choix-scolarite" id="champ-scolarite" >
-					<option  value="primaire">Primaire</option>
-					<option  value="secondaire">Secondaire</option>
-					<option  value="dep">DEP</option>
-					<option  value="cegep">Cégep</option>
+				<label for="champ-choix-classe">classes &nbsp; préféré :</label>
+				<select name="choix-classe" id="champ-classe" >
+					<option   value="grp-a">Groupe A</option>
+					<option  value="grp-b">Groupe B</option>
+					<option  value="grp-n">Groupe N</option>
+					<option  value="grp-r">Groupe R</option>
 				</select>
 			</div>
 	
 			<div>
-				<label for="champ-date-derniere-scolarite">Date de &nbsp; diplomation :</label>
+				<label for="champ-date-derniere-scolarite">Date de &nbsp; naissance :</label>
 				<input type="date" name="date-derniere-scolarite" id="champ-date-derniere-scolarite">
 			</div>
 			
 			<div>
 				<fieldset class="groupe-element">
-					<legend>Scolarité ciblée</legend>
+					<legend>Classe paricipé</legend>
 					<div>
 						<input type="checkbox" name="scolarite-cible-primaire" id="champ-scolarite-primaire">
-						<label for="champ-scolarite-cible">Primaire</label>
+						<label for="champ-scolarite-cible">Groupe A</label>
 					</div>
 					
 					<div>
 						<input type="checkbox" name="scolarite-cible-secondaire" id="champ-scolarite-secondaire">
-						<label for="champ-scolarite-cible">Secondaire</label>
+						<label for="champ-scolarite-cible">Groupe B</label>
 					</div>
 					
 					<div>
 						<input type="checkbox" name="scolarite-cible-dep" id="champ-scolarite-dep" checked>
-						<label for="champ-scolarite-cible">DEP</label>
+						<label for="champ-scolarite-cible">Groupe N</label>
 					</div>
 					
 					<div>
 						<input type="checkbox" name="scolarite-cible-cegep" id="champ-scolarite-cegep">
-						<label for="champ-scolarite-cible">Cégep</label>
+						<label for="champ-scolarite-cible">Groupe R</label>
 					</div>
 				</fieldset>
 			</div>

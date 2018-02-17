@@ -6,10 +6,29 @@
 	<title>page web rally</title>
     
 	<style>
+    h1
+	{
+		text-align:center;
+        color:white;
+	}
+    legend
+    {
+        
+       color:white;    
+        
+    }
+    div
+    {
+        
+        color:white;    
+    }
     .boutondiv
     {
         
         margin:auto;
+        display: block;
+        text-align: center;
+        
         
     }
 	.bouton 
@@ -45,6 +64,10 @@
 		margin-left:5px;
 		padding-top:5px;
 		margin: 0 auto;
+        border-left-color: white;
+        border-right-color: white;
+        border-bottom-color: black;
+        border-top-color: black;
 	}
 	legend
 	{
@@ -80,25 +103,36 @@
 		display:block;
 		margin:5px auto;
 	}
-	
+	html
+    {
+     background:url('images/DiRT_Rally_Background_That_Car.jpg') no-repeat center center fixed;  
+        
+    
+        
+    }
 	</style>
 </head>
 <body>
-	<h1>Inscription: Étape 3</h1>
+	<h1>Inscription rally: Étape 3</h1>
 	<div class=boutondiv>
 	   <a class="bouton"href="Etape2.html">Retour en arrière</a>
 	</div>
 	<form action="index.html">
         <fieldset>
-			<legend>Informations de préférences</legend>
+			<legend>Informations personalisation</legend>
 			<div>
 				<label for="champ-couleur-prefere">Couleur &nbsp; préférée :</label>
 				<input type="color" name="couleur-prefere" id="champ-couleur-prefere">
 			</div>
 			
 			<div>
-				<label for="champ-site-web-prefere">Site web &nbsp; préférée :</label>
-				<input type="url" name="site-web-prefere" id="champ-site-web-prefere">
+				<label for="champ-site-Voiture-prefere">Voiture &nbsp; préférée :</label>
+				<input type="url" name="site-Voiture-prefere" id="champ-site-Voiture-prefere">
+            </div>
+            <div>
+				<label for="champ-numer-prefere">Numéro &nbsp; préférée :</label>
+				<input type="url" name="numero-prefere" id="numero-web-prefere">
+            </div>
 		</fieldset>
 		
 		

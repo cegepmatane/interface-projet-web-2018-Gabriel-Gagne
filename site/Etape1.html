@@ -6,10 +6,23 @@
 	<title>page web rally</title>
     
 	<style>
-    .boutondiv
+    legend
     {
         
+       color:white;    
+        
+    }
+    div
+    {
+        
+        color:white;    
+    }
+    .boutondiv
+    {
         margin:auto;
+        display: block;
+        text-align: center;
+        
         
     }
 	.bouton 
@@ -45,6 +58,10 @@
 		margin-left:5px;
 		padding-top:5px;
 		margin: 0 auto;
+        border-left-color: white;
+        border-right-color: white;
+        border-bottom-color: black;
+        border-top-color: black;
 	}
 	legend
 	{
@@ -53,14 +70,15 @@
 	h1
 	{
 		text-align:center;
+        color:white;
 	}
 	.groupe-element
 	{
 		box-sizing:border-box;
-		width:340px;
+		width:auto;
 		padding:5px;
 		padding-top:5px;
-		margin-left:5px;
+		margin:5px;
 	}
 	.groupe-element label
 	{
@@ -80,11 +98,18 @@
 		display:block;
 		margin:5px auto;
 	}
+    html
+    {
+     background:url('images/DiRT_Rally_Background_That_Car.jpg') no-repeat center center fixed;  
+        
+    
+        
+    }
 	
 	</style>
 </head>
 <body>
-	<h1>Inscription: Étape 1</h1>
+	<h1>Inscription rally: Étape 1</h1>
 	<div class=boutondiv>
 	   <a class="bouton"href="Espace_Membre.html">Retour a la page de membres</a>
 	</div>
@@ -109,11 +134,11 @@
 		<fieldset class="groupe-element">
 		<legend>Genre</legend>
 			<div>
-				<label for="genre-homme">Homme</label>
-				<input type="radio" name="genres" value="homme" id="genre-homme"> 
+				<label for="genre-Subaru">Subaru</label>
+				<input type="radio" name="genres" value="subaru" id="genre-subaru" checked> 
 				
-				<label for="genre-femme">Femme</label>
-				<input type="radio" name="genres" value="femme" id="genre-femme"> 
+				<label for="genre-Mitsubishi">Mitsubishi</label>
+				<input type="radio" name="genres" value="mitsubishi" id="genre-mitsubishi"> 
 			</div>
 		</fieldset>
 		

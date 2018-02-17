@@ -10,30 +10,16 @@
 		{
 			padding:0px;
 			margin:0px;
-            color:white;
-			
+           font-size: 36px;
 		}
-        .infoTel
+        
+        fieldset
         {
             
-            font-size:36px;
-            margin:50px;
-            text-align:center; 
             
+            width:340px;
         }
-        .infoMail
-        {
-            font-size:36px;
-            margin:50px;
-            text-align:center;
-            
-        }
-        .titre
-        {
-            
-            text-align:center;
-            font-size:62px;
-        }
+     
         html
         {
             background:url('images/tx3CXyU.jpg') no-repeat center center fixed;
@@ -41,11 +27,121 @@
             
             
         }
-        
+        .champ-probleme
+        {
+            
+            color:white;
+            
+            
+        }
+        container div
+        {
+            
+            
+            color: white;
+            width: auto;
+            background-color: grey;
+        }
+        div legend
+        {
+            
+            
+           
+        }
+        .submissionfield 
+        {
+            width: 440px; 
+            height: 90px;
+            border: 1px solid #999999;
+            padding: 5px; 
+        }
+        .sumbit
+        {
+            color: white;
+        }
+        li
+		{
+			border-radius:10px;
+			width:auto;
+			display:block;
+			background-color:black;
+			margin-right:10px;
+			margin-bottom:10px;
+         
+			float:left;
+			text-align:center;
+			padding:5px;
+            padding-left:5px;
+            margin: 5px;
+            
+		}
+		li:hover 
+		{
+			background-color:white;
+		
+		}
+		li:hover a 
+		{
+			color:black;
+		}
+        a
+		{
+			
+			color:white;
+			text-decoration:none;
+			background-color:black;
+			margin-left:0px;
+			padding-right:0px;
+			background-color:transparent;
+			
+		}
+		ul
+		{
+			padding-left:30px;
+			list-style-type:none;
+		
+		}
+        body
+        {
+            
+            display: table-row;
+        }
 	</style>
 </head>
 <body>
- <form action="contact.html">
+<nav>
+		<ul>
+			<li>
+				<a href=index.html>Accueil</a>
+				
+			</li>
+			<li>
+				<a href=Articles.html>Articles</a>
+				
+			</li>
+			<li>
+				<a href=Tableau.html>Tableau</a>
+				
+			</li>
+			<li>
+				<a href=Espace_Membre.html>Espace Membre</a>
+				
+			</li>
+			<li>
+				<a href=Contact.html>Contact</a>
+				
+			</li>
+
+		</ul>
+	
+	</nav>
+ <form  action="index.html">
+     <fieldset>
+         
+                    <container>
+                        <div>
+                            <lengend>contact</lengend>
+                        </div>
                         <div>
                             <label for="champ-prenom">Prénom :</label>
                             <input type="text" name="prenom" id="champ-prenom" required>
@@ -54,70 +150,32 @@
                             <label for="champ-courriel">Courriel : </label>
                             <input type="email" name="courriel" id="champ-courriel" required> 
                         </div>
-                        <div>
+                        <div class="champ-probleme">
                             <label for="champ-choix-probleme">Problème rencontré :</label>
                             <select name="choix-probleme" id="champ-probleme" required>
                                 <option  value="bug">Bug</option>
                                 <option  value="connection">Problème de connection</option>
                                 <option  value="lien">Lien qui ne fonctionne pas</option>
+                                <option  value="subaru">Mon Subaru est sauté</option>
+                                <option  value="Ford">J'ai un Ford</option>
                                 <option  value="autres">Autres</option>
                             </select>
                         </div>
                         <div>
-                            <label for="champ-commentaire">Commentaires : </label>
-                            <input type="text" name="commentaire" id="champ-commentaire" > 
+                            <label  for="champ-commentaire">Commentaires : </label>
+                            <input class=submissionfield  maxlength="1000" type="text" name="commentaire" id="champ-commentaire" > 
                         </div>
-                        <div>
-                            <label class="genres" for="genre-homme">Homme</label>
-                            <input type="radio" name="genres" value="homme" id="genre-homme"> 
 
-                            <label class="genres" for="genre-femme">Femme</label>
-                            <input type="radio" name="genres" value="femme" id="genre-femme"> 
+                        <div>
+                            <input class="bouton" type="submit" value="Envoyer">
+                            <a class=sumbit href=index.html>Retour à la page principale</a>
                         </div>
-                        <input class="bouton" type="submit" value="Envoyer">
-                    </form>
-    <div class=titre>
-        <a>
+                    </container>
+         </fieldset>
+    </form>
+
         
-             Pour nous contacter 
-        
-        </a> 
-       
-    </div>
-	
-    <div class=infoMail>
-        <a>
-           
-            Mail: polockv1337@gmail.com
-           
-            
-            
-            
-            
-        </a>
-        
-    <div/>
-    <div class=infoTel>
-        
-        <a>
-            Téléphone: 1-866-277-3553
-        
-        </a>
-        
-        
-    </div>
-    <div class=infoTel>
-        
-        <a>
-            Siège social: Matane
-        
-        </a>
-        
-        
-    </div>
-    <div class=infoTel>
-        
-        <a href=index.html>Retour à la page principale</a>
+     
         
         
     </div>
