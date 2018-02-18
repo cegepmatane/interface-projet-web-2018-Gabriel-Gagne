@@ -71,14 +71,32 @@
         
 
 
-    td /* Toutes les cellules des tableaux... */
-{
-    border: 2px solid black; /* auront une bordure de 1px */
-}
-        
+            td /* Toutes les cellules des tableaux... */
+        {
+            border: 2px solid black; /* auront une bordure de 1px */
+        }
+
         .titre
         {
             text-align:center;
+        }
+        div .fil
+        {
+            display:inline-block;
+            font-size: 22px;
+            color:black;
+            
+            
+            
+        }
+        div .fil-actu
+        {
+            display:inline-block;
+            font-size: 22px;
+            color:deeppink;
+            
+            
+            
         }
 	</style>
 </head>
@@ -111,7 +129,10 @@
 		</ul>
         
 	</nav>
- 
+ <div>
+       <a class="fil" href="index.html">Accueil-</a>
+        <a class="fil-actu">Tableau-</a>
+</div>
     <table>
     <tr class="titre">
        <td colspan="7">Rally selon les jours</td> 
