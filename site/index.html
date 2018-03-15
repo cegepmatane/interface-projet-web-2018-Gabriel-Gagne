@@ -76,11 +76,9 @@
         #container
         {
             
-            background-color:dimgrey;
-            height:auto;
-            width: auto;
-            margin-right: auto;
-            margin-left: auto;
+             background-color:dimgrey;
+            width: 1020px;
+
             border-radius:50px;
             
             
@@ -111,10 +109,37 @@
             
             
         }
+        #donation
+        {
+        
+            color:blue;
+        }
+        #ejs_photo_box
+        {
+    
+            display:inline;
+            
+        }
+        .photoEcho
+        {
+            
+            display:inline;
+            margin-left:350px;
+        }
+        #suivant
+        {
+            color: beige
+        }
+        #precedent
+        {
+            color: beige
+            display:inline-block;
+        }
 	</style>
 </head>
+    
 <body>
-
+    <nav id=container>
 	<nav>
 		<ul>
             <div class=boutton>
@@ -122,25 +147,24 @@
             
                 <li>
 
-                    <a href=index.html>Accueil</a>
+                    <a id="Accueil" href=index.html>Accueil</a>
 
                 </li>
                 <li>
-                    <a href=Articles.html>Articles</a>
+                    <a id="Articles" href=Articles.html>Articles</a>
 
                 </li>
                 <li>
-                    <a href=Tableau.html>Tableau</a>
+                    <a id="Tableau" href=Tableau.html>Tableau</a>
 
                 </li>
                 <li>
-                    <a href=Espace_Membre.html>Espace Membre</a>
+                    <a id="espace_membre" href=Espace_Membre.html>Espace Membre</a>
 
                 </li>
                 <li>
-                    <a href=Contact.html>Contact</a>
-                   
-    
+                    <a id="Contact" href=Contact.html>Contact</a>
+
                 </li>
             </div>
 		</ul>
@@ -149,13 +173,19 @@
     
     
     
-        <nav id=container>
+       
             
             <div class=fil>
                     <a class="fil-actu">Accueil-</a>
                     
             </div>
+        <li>
+                <div class= donation>
+                    <a href=https://www.kickstarter.com/?lang=fr id="donation">Donation ;)</a>
+                    </div>
+                </li>
             <h1>Rally</h1>
+        
             <p class=paragrapheRally>
 
 
@@ -170,14 +200,38 @@
 
 
 
-            <img src="images/maxresdefault (1).jpg" alt="arobas" style="width:640px; height:360px;" class=photoEcho />
+            <img src="images/maxresdefault (1).jpg" alt="arobas" style="width:320px; height:180px;" class="photoEcho" />
 
 
+            <h1>Photo de rally</h1>
+            <DIV ID=ejs_photo_box></div>
+                <SCRIPT LANGUAGE=JavaScript>
+                    ejs_photo = new Array;
+                    ejs_photo[0] = 'images/rallycompetition.jpg';
+                    ejs_photo[1] = 'images/images (1).jpg';
+                    ejs_photo[2] = 'images/ITA3655s-1.jpg';
+                    ejs_photo[3] = 'images/603x339_377742.jpg';
+                    ejs_photo[4] = 'images/03_TGR_0023_W374_H250.jpg';
+                    ejs_photo[5] = 'images/MINI-john-cooper-works-dakar-designboom-600.jpg';
+                    ejs_photo[6] = 'images/Screen-Shot-2018-03-03-at-7.10.43-pm-445x303.jpg';
+     
+                    function ejs_aff_photos(num)
+                        {
+                            if(document.getElementById)
+                        {
+                    ejs_fin = "";
+                        if(num!=0)
+                    ejs_fin += "<A HREF=# onClick='ejs_aff_photos("+(num-1)+");return(false)' id='precedent'>< Précédent</A>     ";
+                        if(num!=(ejs_photo.length-1))
+                    ejs_fin += "<A HREF=# onClick='ejs_aff_photos("+(num+1)+");return(false)'id='suivant' >Suivant  ></A>";
+                        document.getElementById("ejs_photo_box").innerHTML = "<CENTER><IMG SRC='"+ejs_photo[num]+"' BORDER=0><BR>"+ejs_fin+"</CENTER>";
+                    }
+                        }
+                            window.onload = new Function("ejs_aff_photos(0)")
+        </script>
 
 
-
-
-
+        
 
 
         </nav>
