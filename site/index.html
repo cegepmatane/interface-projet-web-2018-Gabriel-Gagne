@@ -68,7 +68,7 @@
         }
         html
         {
-            background:url('images/312953-rally.png') no-repeat center center fixed;
+            background:url('images/312953-rally.png')  no-repeat   fixed;
             
             
             
@@ -97,8 +97,32 @@
         {
             color:white;
             text-align: center;
+            font-size:62px;
+            text-decoration:underline;
+            margin:0px;
+            padding-top: 30px;
+        }
+        h2
+        {
+        
+
+            color:white;
+            text-align: center;
+            font-size:42px;
+            text-decoration:underline;
+        
+        
+        }
+        h3
+        {
+        
+
+            color:white;
+            text-align: center;
             font-size:52px;
             text-decoration:underline;
+        
+        
         }
         nav div .fil-actu
         {
@@ -112,7 +136,7 @@
         #donation
         {
         
-            color:blue;
+            color:orangered;
         }
         #ejs_photo_box
         {
@@ -134,6 +158,19 @@
         {
             color: beige
             display:inline-block;
+        }
+        #highlight
+        {
+            
+            
+            background-color: #FFFF00;
+            color:black;
+        }
+        #mateo
+        {
+            
+            margin-left:40px; 
+            
         }
 	</style>
 </head>
@@ -183,37 +220,39 @@
                 <div class= donation>
                     <a href=https://www.kickstarter.com/?lang=fr id="donation">Donation ;)</a>
                     </div>
+            
                 </li>
-            <h1>Rally</h1>
         
+        <marquee>⌚add me on snap:gabpolok / Reddit Is Life ッ  </marquee>
+        <a target="_blank" href="http://hotelmix.fr/weather/matane-13055"><img src="https://w.bookcdn.com/weather/picture/21_13055_1_3_3658db_250_2a48ba_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=581&anc_id=66339" alt="booked.net" id="mateo"/></a>
+            <h1>Rally</h1>
+            <h2>Accueil</h2>
             <p class=paragrapheRally>
 
 
 
 
-                Le rallye est une discipline de sport automobile. Initialement défi de rassemblement pour aristocrates aisés, la discipline a beaucoup évolué pour devenir une course de vitesse. Les rallyes modernes ont pour particularité de ne pas se pratiquer sur un circuit mais sur des routes fermées au public pour l'occasion. Les épreuves se déroulent sur différents types de terrains (terre, neige, asphalte, etc), et sont composées de plusieurs étapes (parfois courues de nuit), avec une suite d'épreuves allant d'un point à un autre. Les épreuves chronométrées sont appelées épreuves spéciales, les parties non chronométrées sont appelées étapes de liaison.
+                Le <span id=highlight>rallye</span> est une discipline de sport <span id=highlight>automobile</span>. Initialement défi de rassemblement pour aristocrates aisés, la discipline a beaucoup évolué pour devenir une course de vitesse. Les rallyes modernes ont pour particularité de ne pas se pratiquer sur un circuit mais sur des routes fermées au public pour l'occasion. Les épreuves se déroulent sur différents types de <span id=highlight>terrains</span> (terre, neige, asphalte, etc), et sont composées de plusieurs étapes (parfois courues de nuit), avec une suite d'épreuves allant d'un point à un autre. Les épreuves chronométrées sont appelées épreuves spéciales, les parties non chronométrées sont appelées étapes de liaison.
 
 
 
 
             </p>
 
-
-
             <img src="images/maxresdefault (1).jpg" alt="arobas" style="width:320px; height:180px;" class="photoEcho" />
 
 
-            <h1>Photo de rally</h1>
+            <h3>Photo de rally</h3>
             <DIV ID=ejs_photo_box></div>
                 <SCRIPT LANGUAGE=JavaScript>
                     ejs_photo = new Array;
                     ejs_photo[0] = 'images/rallycompetition.jpg';
-                    ejs_photo[1] = 'images/images (1).jpg';
+                    ejs_photo[1] = 'images/tumblr_nqzeivSX4P1s68ob3o1_500.gif';
                     ejs_photo[2] = 'images/ITA3655s-1.jpg';
                     ejs_photo[3] = 'images/603x339_377742.jpg';
                     ejs_photo[4] = 'images/03_TGR_0023_W374_H250.jpg';
-                    ejs_photo[5] = 'images/MINI-john-cooper-works-dakar-designboom-600.jpg';
-                    ejs_photo[6] = 'images/Screen-Shot-2018-03-03-at-7.10.43-pm-445x303.jpg';
+                    ejs_photo[5] = 'images/Optimized-26240440_1436417466467659_6854348226233900267_o.jpg';
+                    ejs_photo[6] = 'images/OffbeatChubbyAztecant-size_restricted.gif';
      
                     function ejs_aff_photos(num)
                         {
@@ -229,9 +268,6 @@
                         }
                             window.onload = new Function("ejs_aff_photos(0)")
         </script>
-
-
-        
 
 
         </nav>
