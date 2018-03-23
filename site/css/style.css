@@ -2,6 +2,10 @@
 {
 margin:0px;
 padding:0px;
-front size :36 px;
+font size :36 px;
 
+}
+body
+{
+    cursor: url('../cur/wii-grab-ccw.cur'), pointer;
 }

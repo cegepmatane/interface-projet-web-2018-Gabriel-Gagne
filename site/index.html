@@ -6,12 +6,14 @@
 	
 	<title>page web rally</title>
 	<style>
+        
 		*
 		{
 			padding:0px;
 
 			font-size:36px;
 		}
+        
 		a
 		{
             display:block;
@@ -47,16 +49,20 @@
 			padding:5px;
             padding-left:5px;
             margin: 5px;
+            cursor: url('cur/Wii%20Pointer%20Blue.cur'),default;
             
 		}
 		li:hover 
 		{
 			background-color:white;
+            
 		
 		}
 		li:hover a 
 		{
 			color:black;
+            cursor: url('cur/Wii%20Pointer%20Blue.cur'),default;
+            
 		}
         .paragrapheRally
         {
@@ -77,7 +83,7 @@
         {
             
              background-color:dimgrey;
-            width: 1020px;
+            width: 1110px;
 
             border-radius:50px;
             
@@ -91,7 +97,7 @@
             
             
             
-            margin-left: 40px;
+            margin-left: 170px;
         }
         h1
         {
@@ -121,6 +127,11 @@
             text-align: center;
             font-size:52px;
             text-decoration:underline;
+                        
+            
+            
+            
+
         
         
         }
@@ -129,13 +140,16 @@
             display:inline-block;
             font-size: 22px;
             color:deeppink;
+            
+            
        
             
             
         }
+        
         #donation
         {
-        
+            
             color:orangered;
         }
         #ejs_photo_box
@@ -147,16 +161,17 @@
         .photoEcho
         {
             
-            display:inline;
-            margin-left:350px;
+            
+       
+            border:0px;            
         }
         #suivant
         {
-            color: beige
+            color: beige;
         }
         #precedent
         {
-            color: beige
+            color: beige;
             display:inline-block;
         }
         #highlight
@@ -172,6 +187,23 @@
             margin-left:40px; 
             
         }
+        html
+        {
+            cursor: url('cur/Wii Pointer.cur'), pointer;
+            
+            
+         
+        }
+        photoDrift
+        {
+            display:block;
+            padding-left:50x;
+            
+            
+            
+        }
+        
+        
 	</style>
 </head>
     
@@ -188,7 +220,7 @@
 
                 </li>
                 <li>
-                    <a id="Articles" href=Articles.html>Articles</a>
+                    <a id="Articles" href=Articles.html>Articles <img src="images/images.jpg" alt="arobas" style="width:94px; height:33px;" id="image-article"  /></a>
 
                 </li>
                 <li>
@@ -240,7 +272,7 @@
             </p>
 
             <img src="images/maxresdefault (1).jpg" alt="arobas" style="width:320px; height:180px;" class="photoEcho" />
-
+            <img src="images/thumbnail_1427977788.png" alt="arobas" style="width:320px; height:180px;" class="photoDrift" />
 
             <h3>Photo de rally</h3>
             <DIV ID=ejs_photo_box></div>
