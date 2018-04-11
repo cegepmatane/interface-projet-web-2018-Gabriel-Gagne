@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<link rel="images" href="style.css">
+	<link rel="images" >
+    <link rel="stylesheet" type="text/css" href="style.css">
 	
 	<title>page web rally</title>
 	<style>
@@ -79,25 +80,13 @@
             
             
         }
-        #container
-        {
-            
-             background-color:dimgrey;
-            width: 1110px;
-
-            border-radius:50px;
-            
-            
-            
-            
-            
-        }
+       
         .photoEcho
         {
             
             
             
-            margin-left: 170px;
+            align-self: center;
         }
         h1
         {
@@ -203,7 +192,11 @@
             
         }
         
-        
+        #grp-photo
+        {
+            
+            margin-left:25%;
+        }
 	</style>
 </head>
     
@@ -270,10 +263,10 @@
 
 
             </p>
-
-            <img src="images/maxresdefault (1).jpg" alt="arobas" style="width:320px; height:180px;" class="photoEcho" />
-            <img src="images/thumbnail_1427977788.png" alt="arobas" style="width:320px; height:180px;" class="photoDrift" />
-
+            <div id="grp-photo">
+                <img src="images/maxresdefault (1).jpg" alt="arobas" style="width:320px; height:180px;" class="photoEcho" />
+                <img src="images/thumbnail_1427977788.png" alt="arobas" style="width:320px; height:180px;" class="photoDrift" />
+            </div>
             <h3>Photo de rally</h3>
             <DIV ID=ejs_photo_box></div>
                 <SCRIPT LANGUAGE=JavaScript>
