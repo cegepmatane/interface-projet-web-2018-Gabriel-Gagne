@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	
+    <script src="script/Aide-contextuelle.js"></script>
 	<title>page web rally</title>
     
 	<style>
@@ -105,10 +105,18 @@
     
         
     }
-	
+    .aide
+    {
+            background-image:url(images/011.jpg);
+            border:solid black 2px;
+            color:white;
+            margin-top: 5px;
+            
+            display: none;
+    }
 	</style>
 </head>
-<body>
+<body onload="intialiser()">
 	<h1>Inscription rally: Étape 1</h1>
 	<div class=boutondiv>
 	   <a class="bouton"href="Espace_Membre.html">Retour a la page de membres</a>
@@ -134,11 +142,13 @@
 		<fieldset class="groupe-element">
 		<legend>Genre</legend>
 			<div>
-				<label for="genre-Subaru">Subaru</label>
-				<input type="radio" name="genres" value="subaru" id="genre-subaru" checked> 
-				
-				<label for="genre-Mitsubishi">Mitsubishi</label>
+                 
+                <label title="Subaru est une marque de voiture représenté par le bleu" id="etiquette" for="genre-Subaru"><span class="info-bulle">Subaru</span></label>
+				<input type="radio" name="genres" value="subaru" id="genre-subaru" statue="checked"> 
+               
+				<label  title="Mitsubishi est une marque de voiture représenté par le Rouge " id="etiquette-M" for="genre-Mitsubishi"><span class="info-bulle">Mitsubishi</span></label>
 				<input type="radio" name="genres" value="mitsubishi" id="genre-mitsubishi"> 
+                <div class="aide" id="aide"></div>
 			</div>
 		</fieldset>
 		

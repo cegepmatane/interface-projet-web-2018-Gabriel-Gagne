@@ -2,9 +2,11 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
+    <script src="script/boutonBalancier.js"></script>
 	<link rel="images" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>page web rally</title>
+    
 	<style>
 *
 		{
@@ -134,7 +136,7 @@
         }
 	</style>
 </head>
-<body>
+<body onload = "initialiserBouton()">
     
     <nav id=container >
 	<nav>
@@ -187,8 +189,10 @@
                         
                         articles sur Lancia /auteur : wikipedia/ résumé: lancia à été un des meilleur dans le monde du rally /date de l'article:27 février 2018 
                     </a>
-                
-                    
+                    <a class="bouton-balancier" id="bouton-balancier-Lancia">+</a>
+                    <p class="fin-vigniette" id="fin-vigniette">
+                        Bien qu'officiellement dissout le 3 mai 1995, le groupe se réunira tout de même par la suite à certaines occasions. 
+                    </p>
                               
                     
                     
