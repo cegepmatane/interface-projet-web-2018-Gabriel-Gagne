@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<link rel="images" >
     <link rel="stylesheet" type="text/css" href="style.css">
-	
-	<title>page web rally</title>
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<title>light box</title>
 	<style>
         
 		*
@@ -197,6 +197,11 @@
             
             margin-left:25%;
         }
+        #lightBox
+        {
+            display: inline-block;
+            
+        }
 	</style>
 </head>
     
@@ -232,72 +237,24 @@
 		</ul>
 	   
 	</nav>
-    
+    <div id="lightBox">
+     <a class="example-image-link" href="images/light-box/Higgins-Snodrift.jpg" data-lightbox="example-set-A" data-title="Click the right half of the image to move forward.">
+                    <img style="width:320px; height:180px;" class="example-image" src="images/light-box/Higgins-Snodrift.jpg" alt=""/>
+                </a>
+                <a class="example-image-link" href="images/light-box/maxresdefault.jpg" data-lightbox="example-set-A" data-title="Or press the right arrow on your keyboard.">
+                    <img style="width:320px; height:180px;" class="example-image" src="images/light-box/maxresdefault.jpg" alt="" />
+                </a>
+                <a class="example-image-link" href="images/light-box/renault-5-alpine-turbo-13.jpg" data-lightbox="example-set-A" data-title="The next image in the set is preloaded as you're viewing.">
+                    <img style="width:320px; height:180px;" class="example-image" src="images/light-box/renault-5-alpine-turbo-13.jpg" alt="" />
+                </a>
+                <a class="example-image-link" href="images/light-box/t%C3%A9l%C3%A9chargement.jpg" style="width:320px; height:180px;" data-lightbox="example-set-A" data-title="Click anywhere outside the image or the X to the right to close.">
+                    <img style="width:320px; height:180px;" class="example-image" src="images/light-box/t%C3%A9l%C3%A9chargement.jpg" alt="" />
+                </a>
+    </div>    
     
     
        
-            
-            <div class=fil>
-                    <a class="fil-actu">Accueil-</a>
-                    
-            </div>
-        <li>
-                <div class= donation>
-                    <a href=https://www.kickstarter.com/?lang=fr id="donation">Donation ;)</a>
-                    </div>
-            
-                </li>
-        <a href="vignette-vedette.html">vignette vedette</a>
-        <a href="lightBox.html">Light box</a>
-        <marquee>⌚add me on snap:gabpolok / Reddit Is Life ッ  </marquee>
-        <a target="_blank" href="http://hotelmix.fr/weather/matane-13055"><img src="https://w.bookcdn.com/weather/picture/21_13055_1_3_3658db_250_2a48ba_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=581&anc_id=66339" alt="booked.net" id="mateo"/></a>
-            <h1>Rally</h1>
-            <h2>Accueil</h2>
-            <p class=paragrapheRally>
-                
-
-
-
-                Le <span id=highlight>rallye</span> est une discipline de sport <span id=highlight>automobile</span>. Initialement défi de rassemblement pour aristocrates aisés, la discipline a beaucoup évolué pour devenir une course de vitesse. Les rallyes modernes ont pour particularité de ne pas se pratiquer sur un circuit mais sur des routes fermées au public pour l'occasion. Les épreuves se déroulent sur différents types de <span id=highlight>terrains</span> (terre, neige, asphalte, etc), et sont composées de plusieurs étapes (parfois courues de nuit), avec une suite d'épreuves allant d'un point à un autre. Les épreuves chronométrées sont appelées épreuves spéciales, les parties non chronométrées sont appelées étapes de liaison.
-
-
-
-
-            </p>
-            <div id="grp-photo">
-                <img src="images/maxresdefault (1).jpg" alt="arobas" style="width:320px; height:180px;" class="photoEcho" />
-                <img src="images/thumbnail_1427977788.png" alt="arobas" style="width:320px; height:180px;" class="photoDrift" />
-            </div>
-            <h3>Photo de rally</h3>
-            <DIV ID=ejs_photo_box></div>
-                <SCRIPT LANGUAGE=JavaScript>
-                    ejs_photo = new Array;
-                    ejs_photo[0] = 'images/tumblr_nqzeivSX4P1s68ob3o1_500.gif';
-                    ejs_photo[1] = 'images/rallycompetition.jpg';
-                    ejs_photo[2] = 'images/ITA3655s-1.jpg';
-                    ejs_photo[3] = 'images/603x339_377742.jpg';
-                    ejs_photo[4] = 'images/03_TGR_0023_W374_H250.jpg';
-                    ejs_photo[5] = 'images/Optimized-26240440_1436417466467659_6854348226233900267_o.jpg';
-                    ejs_photo[6] = 'images/OffbeatChubbyAztecant-size_restricted.gif';
-     
-                    function ejs_aff_photos(num)
-                        {
-                            if(document.getElementById)
-                        {
-                    ejs_fin = "";
-                        if(num!=0)
-                    ejs_fin += "<A HREF=# onClick='ejs_aff_photos("+(num-1)+");return(false)' id='precedent'>< Précédent</A>     ";
-                        if(num!=(ejs_photo.length-1))
-                    ejs_fin += "<A HREF=# onClick='ejs_aff_photos("+(num+1)+");return(false)'id='suivant' >Suivant  ></A>";
-                        document.getElementById("ejs_photo_box").innerHTML = "<CENTER><IMG SRC='"+ejs_photo[num]+"' BORDER=0><BR>"+ejs_fin+"</CENTER>";
-                    }
-                        }
-                            window.onload = new Function("ejs_aff_photos(0)")
-        </script>
-        
-
-
-        </nav>
- 
+    </nav>
+    <script src="script/lightbox-plus-jquery.js"></script>
 </body>
 </html>
