@@ -2,9 +2,10 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-    <script src="script/boutonBalancier.js"></script>
+    
 	<link rel="images" href="style.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>page web rally</title>
     
 	<style>
@@ -71,7 +72,7 @@
         }
         html
         {
-            background:url('images/beauty-and-speed-in-perfect-harmony-in-the-stratos.jpg') no-repeat center center fixed;
+            background:url('images/26956-all-white-forest-1920x1080-nature-wallpaper.jpg') no-repeat center center fixed;
             
             
             
@@ -130,9 +131,7 @@
         }
         h2
         {
-            color: white;
-            text-align: center;
-            text-decoration:underline;
+            font-size: 16px;
         }
         .fin-vigniette
         {
@@ -157,10 +156,15 @@
         {
             float: left;
         }
-        
+        #accordion
+        {
+            
+            display: inline-block;
+        }
+        <link href="css/style.css">
 	</style>
 </head>
-<body onload = "initialiser()">
+<body onload="initialiser()">
     
     <nav id=container >
 	<nav>
@@ -169,7 +173,7 @@
 
                     <a id="Accueil" href=index.html>Accueil</a>
 
-                </li>
+            </li>
                 <li>
                     <a id="Articles" href=Articles.html>Articles<img src="images/images.jpg" alt="arobas" style="width:94px; height:33px;" id="image-bouton"  /></a>
 
@@ -190,71 +194,19 @@
 		</ul>
 	
 	</nav>
-    
-    
-            <div >
-                <a class="fil" href="index.html">Accueil-</a>
-                <a class="fil-actu">Articles-</a>
-        
-            </div>
-            
-            <div class=article>
-
-                <h1>Rally</h1>
-                <h2>Articles</h2>
-                <div id="contenu">
-                <div class="border">
-                    
-                    <a id="lancia" href=Articles1.html>Lancia</a>
-                    <a href=Articles1.html>
-                    <img src="images/d78a624f8ac80b42a32c8bf2d7c97f0c.jpg" alt="arobas" style="width:320px; height:180px;"class=photoLancia  /> 
-                    </a>
-                    <a id="texte-lancia">
-                        
-                        articles sur Lancia /auteur : wikipedia/ 
-                    </a>
-                    <p class="fin-vigniette" id="fin-vigniette-Lancia">
-                        résumé: lancia à été un des meilleur dans le monde du rally /date de l'article:27 février 2018 
-                    </p>
-                    <a class="bouton-balancier" id="bouton-balancier-Lancia">+</a>
-                    
-                              
-                    
-                    
-                </div>
-                <div class="border">
-                    <a id="Subaru" href=Articles2.html>Subaru</a>
-                    <a href=Articles2.html>
-                    <img src="images/2010_Olympus_Rally_by_Neil_McDaid-12.jpg" alt="arobas" style="width:320px; height:180px;"class=photoLancia    /> 
-                    </a>
-                    <a id="texte-lancia">
-                        
-                        articles sur Subaru /auteur : wikipedia/ 
-                    </a>
-                    <p class="fin-vigniette" id="fin-vigniette-Subaru">
-                        résumé: subaru à été un des meilleur dans le monde du rally /date de l'article:27 février 2018 
-                    </p>
-                    <a class="bouton-balancier" id="bouton-balancier-Subaru">+</a>
-                </div>
-                <div class="border">
-                    <a id="mitsubishi" href=Articles3.html>mitsubishi</a>
-                    <a href=Articles3.html>
-                    <img src="images/1571395.jpg" alt="arobas" style="width:320px; height:180px;"class=photoLancia  /> 
-                    </a>
-                
-                <a id="texte-lancia">
-                        
-                        articles sur mitsubishi /auteur : wikipedia/ 
-                    </a>
-                <p class="fin-vigniette" id="fin-vigniette-Mitsubishi">
-                        résumé:mitsubishi  à été un des meilleur dans le monde du rally /date de l'article:27 février 2018 
-                    </p>
-                <a class="bouton-balancier" id="bouton-balancier-Mitsubishi">+</a>
-                    </div>
-            </div>
-
-       
-    </nav>
+    <div id="accordion">
+                <h2>Quelle est votre nom?</h2>
+            <div>Demande à ta mère</div>
+                <h2>100km/h en mph?</h2>
+                <div>62,1371</div>
+                <h2>combien jai de cellule </h2>
+                <div>0</div>
     </div>
+    
+
+    </nav>
+    
+    <script src="script/accordion.js"></script>
 </body>
 </html>
+
