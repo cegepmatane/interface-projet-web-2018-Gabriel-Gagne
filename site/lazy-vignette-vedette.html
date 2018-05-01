@@ -197,6 +197,57 @@
             
             margin-left:25%;
         }
+         .vigniette-vedette-lazy
+        {
+            position:relative;
+            
+            width:50%;
+            margin: 20px auto;
+            height:auto;
+            
+            padding:3px;
+        }
+        
+        .vigniette-vedette-lazy img
+        {
+            width:50%;
+            float:left;
+        }
+
+        .vigniette-vedette-lazy h3
+        {
+            width:48%;
+            float:left;
+            margin-left:2%;
+        }
+
+        .vigniette-vedette-lazy p
+        {
+            display:block;
+            width:48%;
+            float:left;
+            margin-left:2%;
+        }
+        
+        .vigniette-vedette-lazy::after
+        {
+            content:"";
+            display:block;
+            clear:both;
+           
+        }
+        .aperecu-photo
+        {
+            float:left;
+           display: block; 
+            width: auto;
+            height: auto;
+        }
+        #vigniette-vedette-lazy
+        {
+            border: 2px black solid;
+            margin-top: 500px;
+        }
 	</style>
 </head>
     
@@ -249,7 +300,7 @@
                     </a>
                 </li>
                 <li class="apercu">
-                    <a href="#vigniette-vedette-lancia" title="Cliquer sur la vignette pour afficher les détails dans une fiche en dessous.">
+                    <a href="#vigniette-vedette-Lancia" title="Cliquer sur la vignette pour afficher les détails dans une fiche en dessous.">
                         <img style="width:320px; height:180px;" src="images/vignette/1992-lancia-delta-hf-integrale-evoluzione.jpg" alt="stromgol">
                     </a>
                 </li>
@@ -264,9 +315,9 @@
                     </a>
                 </li>
             </ul>
-            <div id="vigniette-vedette-lazy">
-            </div>
+            
         </div>
-        
+        <div id="vigniette-vedette-lazy">
+        </div>
 </body>
 </html>

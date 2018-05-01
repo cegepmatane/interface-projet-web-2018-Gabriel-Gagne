@@ -29,6 +29,29 @@ function ajouterActionSurApercuLazy()
         listeApercuLazy[position].onclick = afficherVignetteVedetteLazy;
     }
 }
+function cacherToutesLesVignetteVedette()
+{
+    function afficherVignetteVedette(evenement)
+{
+    cacherToutesLesVignetteVedette();
+    
+    //alert("afficherVignetteVedette");
+    var baliseImage = evenement.target;
+    var baliseA = baliseImage.parentNode;
+    var lienTexte = baliseA.href;
+    var tableauLienTexte = lienTexte.split("#");
+    var idFicheVedette =tableauLienTexte[1];
+    var ficheVedette = document.getElementById(idFicheVedette);
+    ficheVedette.style.display = "block";
+    
+}
+
+    for(position = 0; position < vignietteVedetteLazy.length; position++)
+    {
+        vignietteVedetteLazy[position].style.display = "none";
+    }
+}
+
 function afficherVignetteVedetteLazy(evenement)
 {
     cacherToutesLesVignetteVedette();
@@ -52,19 +75,14 @@ function afficherVignetteVedetteLazy(evenement)
             if(vignietteVedetteLazy) 
             {
                 //alert(ajax.responseText);
-                vignietteVedetteLazy.innerHTML += "Texte " + ajax.responseText;
+                vignietteVedetteLazy.innerHTML += "" + ajax.responseText;
             }
         }
     }
-    
     ajax.send("");
     
 }
-function cacherToutesLesVignetteVedette()
-{
-    
-    for(position = 0; position < listeVignetteVedette.length; position++)
-    {
-        listeVignetteVedette[position].style.display = "none";
-    }
-}
+
+
+
+
