@@ -1,0 +1,34 @@
+@media(max-width:1510) {
+        .grid-container 
+        {
+            
+            grid-template-columns: auto auto;
+            
+          
+        
+                
+        }
+        #container
+        {
+            height: 2500px;
+        }
+            
+            
+        }
+@media(max-width:440) {
+        .grid-container 
+        {
+            
+            grid-template-columns:  auto;
+            
+          
+        
+                
+        }
+        #container
+        {
+            height: 2500px;
+        }
+            
+            
+        }
