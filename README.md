@@ -3,10 +3,22 @@ mon projet va parler de voiture qui vont vite dans le bois (des cahrs de rally)
 
 projet à: Gabriel Gagné 
 
+page accueil:
+https://cegepmatane.github.io/interface-projet-web-2018-Gabriel-Gagne/index.html
 
-Page galerie:
-url 
+image:
+https://github.com/cegepmatane/interface-projet-web-2018-Gabriel-Gagne/blob/master/plan/Screenshot_16.png
 
-Menu hamburger:
+Page galerie-mobile:
+https://cegepmatane.github.io/interface-projet-web-2018-Gabriel-Gagne/galerie-mobile.html
+image :
+https://github.com/cegepmatane/interface-projet-web-2018-Gabriel-Gagne/blob/master/plan/Screenshot_1.png
 
-page splash:
+Menu parallax:
+
+
+https://cegepmatane.github.io/interface-projet-web-2018-Gabriel-Gagne/promotion.html
+
+
+screen google erreur:
+
