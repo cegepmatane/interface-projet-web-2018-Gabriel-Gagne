@@ -2,257 +2,60 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<link rel="images" href="style.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <script src="Java.js"></script>>
-	<title>page web rally</title>
-	<style>
-		*
-		{
-			padding:0px;
-
-			font-size:36px;
-		}
-		a
-		{
-            display:block;
-			margin: auto;
-            
-			color:white;
-			text-decoration:none;
-			background-color:black;
-			margin-left:0px;
-			padding-right:0px;
-			background-color:transparent;
-			
-		}
-		ul
-		{
-			padding-left:30px;
-			list-style-type:none;
-           
-            
-		
-		}
-		li
-		{
-			border-radius:10px;
-			width:auto;
-			display:block;
-			background-color:black;
-			margin-right:10px;
-			margin-bottom:10px;
-         
-			float:left;
-			text-align:center;
-			padding:5px;
-            padding-left:5px;
-            margin: 5px;
-            
-		}
-		li:hover 
-		{
-			background-color:white;
-		
-		}
-		li:hover a 
-		{
-			color:black;
-		}
-        .paragrapheRally
-        {
-            text-align:center; 
-            display:inline-block;
-			margin: auto;
-            color:white;
-            
-        }
-        html
-        {
-            background:url('images/312953-rally.png') no-repeat center center fixed;
-            
-            
-            
-        }
-        #container
-        {
-            
-            background-color:dimgrey;
-            height:auto;
-            width: auto;
-            margin-right: auto;
-            margin-left: auto;
-            border-radius:50px;
-            
-            
-            
-            
-            
-        }
-        h1
-        {
-            
-            text-align: center;
-        }
-        .photoLancia
-        {
-            
-            margin-left: 40px;
-        }
-        nav .fil a
-        {
-            display:inline-block;
-            font-size: 22px;
-            color:black;
-            
-            
-            
-        }
-        nav div .fil-actu
-        {
-            display:inline-block;
-            font-size: 22px;
-            color:deeppink;
-            
-            
-            
-        
-        }
-        #mots_evidence
-        {
-            color:floralwhite;
-            font-style: italic;
-        }
-        h1
-        {
-            color:white;
-            text-align: center;
-            font-size:62px;
-            text-decoration:underline;
-        }
-        h2
-        {
-        
-
-            color:white;
-            text-align: center;
-            font-size:42px;
-            text-decoration:underline;
-        
-        
-        }
-        h3
-        {
-        
-
-            color:white;
-            text-align: center;
-            font-size:32px;
-            text-decoration:underline;
-        
-        
-        }
-        #highlight
-        {
-            
-            
-            background-color: #FFFF00;
-            color:black;
-        }
-       
-        .containeur-rss
-        {
-            
-            
-     
-            text-align: center;
-        }
-	</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+	<title>Rallye Lover</title>
 </head>
-<body onload="initialiser()">
-
-	<nav>
-		<ul>
-            <div class=boutton>
-            
-            
-                <li>
-
-                    <a href=index.html>Accueil</a>
-
-                </li>
-                <li>
-                    <a href=Articles.html>Articles<img src="images/images.jpg" alt="arobas" style="width:94px; height:33px;" id="image-bouton"  /></a>
-
-                </li>
-                <li>
-                    <a href=Tableau.html>Tableau</a>
-
-                </li>
-                <li>
-                    <a href=Espace_Membre.html>Espace Membre</a>
-
-                </li>
-                <li>
-                    <a href=Contact.html>Contact</a>
-
-                </li>
-            </div>
-		</ul>
-	
-	</nav>
+<body>
     
-    
-    
-        <nav id=container>
-
-            
-            
-            
-            
-            
-            <title>lancia</title>
-            <div class=fil>
-                    <a class="fil" href="index.html">Accueil-</a>
-                    <a href=Articles.html>Articles-</a>
-                    <a  class=fil-actu l>Lancia-</a>
-            </div>
-            <div>
-            
-            
-            
-                <h1>Rally</h1>
-                <h2>Articles</h2>
-                <h3>Lancia</h3>
-             </div>
-            <p class=paragrapheRally>
-
-                
-                Si elle fait ses débuts en avril <span id=highlight>1982</span> en championnat d'Europe, en Sardaigne , au <a class=paragrapheRally id ="mots_evidence">Rallye</a> Costa Smeralda, sa première confrontation internationale a lieu à l'occasion de l'édition <span id=highlight>1982</span> du Tour de Corse, cinquième épreuve du championnat du monde. Deux voitures sont confiées à Markku Alén et <a class=paragrapheRally id ="mots_evidence">Attilio Bettega</a> : termine neuvième tandis que <a class=paragrapheRally id ="mots_evidence">Bettega</a> est victime d'une violente sortie de route qui met en évidence sa fragilité. Cet accident conduit à la réalisation d'une évolution à portes en kevlar qui apparaît au rallye de Madère. La <a class=paragrapheRally id ="mots_evidence"> <span id=highlight>037</span></a> reçoit également un système d'injection mécanique Bosch en lieu et place des carburateurs, complété par une injection d'eau.
-
-              
-
-            
-
-            <a href=https://i.ytimg.com/vi/W3nND-x-X2E/maxresdefault.jpg>
-            
-            <img src="images/maxresdefault.jpg" alt="arobas" style="width:640px; height:360px;"class=photoLancia /> 
-
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand m-2" href="index.html">Rallye Lover</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Acceuil</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Tableau.html">Tableau</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="Articles.html">Articles</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Espace_Membre.html">Espace Membre</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Autres
             </a>
-
-
-
-
-           <div class="containeur-rss">
-                <a id= "lien-canada" href="https://ici.radio-canada.ca/" title="Radio-Canada">canada</a>
-                <a id= "lien-Facebook" href="https://www.facebook.com/" title="Facebook">Facebook</a>
-                <a id= "lien-reddit" href="https://www.reddit.com/" title="Reddit">Reddit</a>
-                <a id= "lien-Twitter" href="https://twitter.com/?lang=fr" title="twitter">twitter</a>
-                <a id= "lien-Quora" href="https://fr.quora.com/" title="Quora">Quora</a>
-
-
-            </div>
-        </nav>
- 
+            <ul  class="dropdown-menu">
+            <li><a class="dropdown-item" href="vignette-vedette.html">Vignette Vedette</a></li>
+            <li><a class="dropdown-item" href="lightBox.html">Light box</a></li>
+            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="promotion.html">Promotion</a></li>
+            <li><a class="dropdown-item" href="galerie-mobile.html">Galerie Mobile</a></li>
+            <li><a class="dropdown-item" href="lazy-vignette-vedette.html">Lazy Vignette</a></li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+</nav>          
+<title>lancia</title>
+<h1 class="m-3">Articles</h1>
+<h2 class="m-3">Lancia</h2>
+<a href=https://i.ytimg.com/vi/W3nND-x-X2E/maxresdefault.jpg>
+    <img class="m-3" src="images/maxresdefault.jpg" alt="arobas" style="width:640px; height:360px;"/>
+</a>
+<p class="m-3">
+    Si elle fait ses débuts en avril <span id=highlight>1982</span> en championnat d'Europe, en Sardaigne , au <a id ="mots_evidence">Rallye</a> Costa Smeralda, sa première confrontation internationale a lieu à l'occasion de l'édition <span id=highlight>1982</span> du Tour de Corse, cinquième épreuve du championnat du monde. Deux voitures sont confiées à Markku Alén et <a id ="mots_evidence">Attilio Bettega</a> : termine neuvième tandis que <a class=paragrapheRally id ="mots_evidence">Bettega</a> est victime d'une violente sortie de route qui met en évidence sa fragilité. Cet accident conduit à la réalisation d'une évolution à portes en kevlar qui apparaît au rallye de Madère. La <a id ="mots_evidence"> <span id=highlight>037</span></a> reçoit également un système d'injection mécanique Bosch en lieu et place des carburateurs, complété par une injection d'eau.
+</p>
 </body>
 </html>

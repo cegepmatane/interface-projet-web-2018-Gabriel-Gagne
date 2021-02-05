@@ -2,173 +2,68 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<link rel="images" href="style.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>page web rally</title>
-	<style>
-		*
-		{
-			padding:0px;
-			marguin:0px;
-			font-size:36px;
-		}
-		a
-		{
-			
-			color:white;
-			text-decoration:none;
-			background-color:black;
-			margin-left:0px;
-			padding-right:0px;
-			background-color:transparent;
-			
-		}
-		ul
-		{
-			padding-left:30px;
-			list-style-type:none;
-		
-		}
-		li
-		{
-			border-radius:10px;
-			width:auto;
-			display:block;
-			background-color:black;
-			margin-right:10px;
-			margin-bottom:10px;
-         
-			float:left;
-			text-align:center;
-			padding:5px;
-            padding-left:5px;
-            margin: 5px;
-            
-		}
-		li:hover 
-		{
-			background-color:white;
-		
-		}
-		li:hover a 
-		{
-			color:black;
-		}
-        html
-        {
-            background:url('images/26956-all-white-forest-1920x1080-nature-wallpaper.jpg') no-repeat center center fixed;
-            
-            
-            
-        }
-        h1
-        {
-            
-            text-align:center;
-           font-size:52px; 
-        }
-     
-        
-
-
-            td /* Toutes les cellules des tableaux... */
-        {
-            border: 2px solid black; /* auront une bordure de 1px */
-        }
-
-        .titre
-        {
-            text-align:center;
-            font-style: italic;
-        }
-        div .fil
-        {
-            display:inline-block;
-            font-size: 22px;
-            color:black;
-            
-            
-            
-        }
-        div .fil-actu
-        {
-            display:inline-block;
-            font-size: 22px;
-            color:deeppink;
-            
-            
-            
-        }
-        
-         h1
-        {
-            color:white;
-            text-align: center;
-            font-size:62px;
-            text-decoration:underline;
-        }
-        h2
-        {
-        
-
-            color:white;
-            text-align: center;
-            font-size:42px;
-            text-decoration:underline;
-        
-        
-        }
-        
-	</style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+	<title>Rallye Lover</title>
 </head>
 <body>
-<div id=container>
-	<nav>
-		<ul>
-                <li>
-
-                    <a href=index.html>Accueil</a>
-
-                </li>
-                <li>
-                    <a href=Articles.html>Articles<img src="images/images.jpg" alt="arobas" style="width:94px; height:33px;" id="image-bouton"  /></a>
-
-                </li>
-                <li>
-                    <a href=Tableau.html>Tableau</a>
-
-                </li>
-                <li>
-                    <a href=Espace_Membre.html>Espace Membre</a>
-
-                </li>
-                <li>
-                    <a href=Contact.html>Contact</a>
-
-                </li>
-
-		</ul>
-        
-	</nav>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand m-2" href="index.html">Rallye Lover</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Tableau.html">Tableau</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Articles.html">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Espace_Membre.html">Espace Membre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Autres
+              </a>
+              <ul  class="dropdown-menu">
+                <li><a class="dropdown-item" href="vignette-vedette.html">Vignette Vedette</a></li>
+                <li><a class="dropdown-item" href="lightBox.html">Light box</a></li>
+                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                <li><a class="dropdown-item" href="promotion.html">Promotion</a></li>
+                <li><a class="dropdown-item" href="galerie-mobile.html">Galerie Mobile</a></li>
+                <li><a class="dropdown-item" href="lazy-vignette-vedette.html">Lazy Vignette</a></li>
+              </ul >
+            </li>
+          </ul>
+        </div>
+    </nav>
  <div>
-       <a class="fil" href="index.html">Accueil-</a>
-        <a class="fil-actu">Tableau-</a>
 </div>
-    <h1>Rally</h1>
-    <h2>Tableau</h2>
+    <h1 class="m-3">Rallye</h1>
+    <h2 class="m-3">Tableau</h2>
   
-    <table>
-    <tr class="titre">
+    <table class="table table-striped" >
+    <tr>
        <td colspan="7">Rally selon les jours</td> 
    </tr>
    <tr>
-       <td>lundi</td>
-       <td>mardi</td>
-       <td>mercredi</td>
-       <td>jeudi</td>
-       <td>vendredi</td>
-       <td>samedi</td>
-       <td>dimanche</td>
+       <td scope="col">lundi</td>
+       <td scope="col">mardi</td>
+       <td scope="col">mercredi</td>
+       <td scope="col">jeudi</td>
+       <td scope="col">vendredi</td>
+       <td scope="col">samedi</td>
+       <td scope="col">dimanche</td>
    </tr>
     
    <tr>
@@ -181,6 +76,5 @@
        <td>pas de rally</td>
    </tr>
 </table>
-</div>
 </body>
 </html>
