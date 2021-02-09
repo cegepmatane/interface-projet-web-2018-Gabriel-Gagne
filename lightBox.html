@@ -2,259 +2,69 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<link rel="images" >
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script/lightbox-plus-jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
-	<title>light box</title>
-	<style>
-        
-		*
-		{
-			padding:0px;
-
-			font-size:36px;
-		}
-        
-		a
-		{
-            display:block;
-			margin: auto;
-            
-			color:white;
-			text-decoration:none;
-			background-color:black;
-			margin-left:0px;
-			padding-right:0px;
-			background-color:transparent;
-			
-		}
-		ul
-		{
-			padding-left:30px;
-			list-style-type:none;
-           
-            
-		
-		}
-		li
-		{
-			border-radius:10px;
-			width:auto;
-			display:block;
-			background-color:black;
-			margin-right:10px;
-			margin-bottom:10px;
-         
-			float:left;
-			text-align:center;
-			padding:5px;
-            padding-left:5px;
-            margin: 5px;
-            cursor: url('cur/Wii%20Pointer%20Blue.cur'),default;
-            
-		}
-		li:hover 
-		{
-			background-color:white;
-            
-		
-		}
-		li:hover a 
-		{
-			color:black;
-            cursor: url('cur/Wii%20Pointer%20Blue.cur'),default;
-            
-		}
-        .paragrapheRally
-        {
-            text-align:center; 
-            display:inline-block;
-			margin: auto;
-            color:white;
-            
-        }
-        html
-        {
-            background:url('images/312953-rally.png')  no-repeat   fixed;
-            
-            
-            
-        }
-       
-        .photoEcho
-        {
-            
-            
-            
-            align-self: center;
-        }
-        h1
-        {
-            color:white;
-            text-align: center;
-            font-size:62px;
-            text-decoration:underline;
-            margin:0px;
-            padding-top: 30px;
-        }
-        h2
-        {
-        
-
-            color:white;
-            text-align: center;
-            font-size:42px;
-            text-decoration:underline;
-        
-        
-        }
-        h3
-        {
-        
-
-            color:white;
-            text-align: center;
-            font-size:52px;
-            text-decoration:underline;
-                        
-            
-            
-            
-
-        
-        
-        }
-        nav div .fil-actu
-        {
-            display:inline-block;
-            font-size: 22px;
-            color:deeppink;
-            
-            
-       
-            
-            
-        }
-        
-        #donation
-        {
-            
-            color:orangered;
-        }
-        #ejs_photo_box
-        {
-    
-            display:inline;
-            
-        }
-        .photoEcho
-        {
-            
-            
-       
-            border:0px;            
-        }
-        #suivant
-        {
-            color: beige;
-        }
-        #precedent
-        {
-            color: beige;
-            display:inline-block;
-        }
-        #highlight
-        {
-            
-            
-            background-color: #FFFF00;
-            color:black;
-        }
-        #mateo
-        {
-            
-            margin-left:40px; 
-            
-        }
-        html
-        {
-            cursor: url('cur/Wii Pointer.cur'), pointer;
-            
-            
-         
-        }
-        photoDrift
-        {
-            display:block;
-            padding-left:50x;
-            
-            
-            
-        }
-        
-        #grp-photo
-        {
-            
-            margin-left:25%;
-        }
-        #lightBox
-        {
-            display: inline-block;
-            
-        }
-	</style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="script/accordion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+	<title>Rallye Lover</title>
 </head>
-    
 <body>
-    <nav id=container>
-	<nav>
-		<ul>
-            <div class=boutton>
-            
-            
-                <li>
-
-                    <a id="Accueil" href=index.html>Accueil</a>
-
-                </li>
-                <li>
-                    <a id="Articles" href=Articles.html>Articles <img src="images/images.jpg" alt="arobas" style="width:94px; height:33px;" id="image-bouton"  /></a>
-
-                </li>
-                <li>
-                    <a id="Tableau" href=Tableau.html>Tableau</a>
-
-                </li>
-                <li>
-                    <a id="espace_membre" href=Espace_Membre.html>Espace Membre</a>
-
-                </li>
-                <li>
-                    <a id="Contact" href=Contact.html>Contact</a>
-
-                </li>
-            </div>
-		</ul>
-	   
-	</nav>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand m-2" href="index.html">Rallye Lover</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Acceuil</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Tableau.html">Tableau</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Articles.html">Articles</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Espace_Membre.html">Espace Membre</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Autres
+            </a>
+            <ul  class="dropdown-menu">
+            <li><a class="dropdown-item" href="vignette-vedette.html">Vignette Vedette</a></li>
+            <li><a class="dropdown-item active" href="lightBox.html">Light box</a></li>
+            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="promotion.html">Promotion</a></li>
+            <li><a class="dropdown-item" href="galerie-mobile.html">Galerie Mobile</a></li>
+            <li><a class="dropdown-item" href="lazy-vignette-vedette.html">Lazy Vignette</a></li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+</nav>
+<h1 class="m-3">Light box</h1>
     <div id="lightBox">
-     <a class="example-image-link" href="images/light-box/Higgins-Snodrift.jpg" data-lightbox="example-set-A" data-title="Click the right half of the image to move forward.">
-                    <img style="width:320px; height:180px;" class="example-image" src="images/light-box/Higgins-Snodrift.jpg" alt=""/>
+                <a  href="images/light-box/Higgins-Snodrift.jpg" data-lightbox="example-set-A" data-title="Click the right half of the image to move forward.">
+                    <img class="m-3" style="width:320px; height:180px;"  src="images/light-box/Higgins-Snodrift.jpg" alt=""/>
                 </a>
-                <a class="example-image-link" href="images/light-box/maxresdefault.jpg" data-lightbox="example-set-A" data-title="Or press the right arrow on your keyboard.">
-                    <img style="width:320px; height:180px;" class="example-image" src="images/light-box/maxresdefault.jpg" alt="" />
+                <a  href="images/light-box/maxresdefault.jpg" data-lightbox="example-set-A" data-title="Or press the right arrow on your keyboard.">
+                    <img class="m-3" style="width:320px; height:180px;" src="images/light-box/maxresdefault.jpg" alt="" />
                 </a>
-                <a class="example-image-link" href="images/light-box/renault-5-alpine-turbo-13.jpg" data-lightbox="example-set-A" data-title="The next image in the set is preloaded as you're viewing.">
-                    <img style="width:320px; height:180px;" class="example-image" src="images/light-box/renault-5-alpine-turbo-13.jpg" alt="" />
+                <a  href="images/light-box/renault-5-alpine-turbo-13.jpg" data-lightbox="example-set-A" data-title="The next image in the set is preloaded as you're viewing.">
+                    <img  class="m-3" style="width:320px; height:180px;"  src="images/light-box/renault-5-alpine-turbo-13.jpg" alt="" />
                 </a>
-                <a class="example-image-link" href="images/light-box/t%C3%A9l%C3%A9chargement.jpg" style="width:320px; height:180px;" data-lightbox="example-set-A" data-title="Click anywhere outside the image or the X to the right to close.">
-                    <img style="width:320px; height:180px;" class="example-image" src="images/light-box/t%C3%A9l%C3%A9chargement.jpg" alt="" />
+                <a href="images/light-box/t%C3%A9l%C3%A9chargement.jpg" style="width:320px; height:180px;" data-lightbox="example-set-A" data-title="Click anywhere outside the image or the X to the right to close.">
+                    <img  class="m-3" style="width:320px; height:180px;" src="images/light-box/t%C3%A9l%C3%A9chargement.jpg" alt="" />
                 </a>
     </div>    
     
-    
-       
-    </nav>
-    <script src="script/lightbox-plus-jquery.js"></script>
 </body>
 </html>

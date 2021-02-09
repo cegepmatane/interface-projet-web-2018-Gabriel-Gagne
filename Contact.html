@@ -47,21 +47,21 @@
         </ul>
     </div>
 </nav>
- <form action="index.html" name="Conctact" onsubmit="function verifMail(this);">
+ <form class="m-3" action="index.html" name="Conctact" onsubmit="function verifMail(this);">
      <fieldset>
-            <div>
+            <div >
                 <h1>Contact</h1>
             </div>
-            <div>
+            <div class="m-3">
                 <label for="champ-prenom">Prénom :</label>
                 <input type="text" name="prenom" id="champ-prenom" required>
             </div>
-            <div>
+            <div class="m-3">
                 <label for="mailteste">Courriel : </label>
                 <input  name="courriel"  value="Ex:polock@gmail.com" onclick="if(this.value == 'Ex:polock@gmail.com'){this.value=''};" onBlur="if(this.value == ''){this.value='Ex:polock@gmail.com';}" type="email"  id="Mail" required />
                 <span></span>
             </div>
-            <div class="champ-probleme">
+            <div class="m-3 champ-probleme">
                 <label for="champ-choix-probleme">Problème rencontré :</label>
                 <select name="choix-probleme" id="champ-probleme" required>
                     <option  value="bug">Bug</option>
@@ -72,12 +72,12 @@
                     <option  value="autres">Autres</option>
                 </select>
             </div>
-            <div>
+            <div class="m-3">
                 <label  for="champ-commentaire">Commentaires : </label>
                 <input  maxlength="1000" type="text" name="commentaire" id="champ-commentaire" > 
             </div>
 
-            <div>
+            <div class="m-3">
                 <input class="bouton" name="submit" type="submit" value="Envoyer">
                 <a href=index.html>Retour à la page principale</a>
             </div>

@@ -63,8 +63,7 @@ function afficherVignetteVedetteLazy(evenement)
     var idFicheVedette =tableauLienTexte[1];
     
     var ajax = new XMLHttpRequest();			
-    ajax.open('GET', 'http://localhost/site/vignette-serveur.php?idVignette='+idFicheVedette, true);	
-    console.log('http://localhost/site/vignette-serveur.php?idVignette='+idFicheVedette);
+    ajax.open('GET', 'vignette-serveur.php?idVignette='+idFicheVedette, true);	
     ajax.onreadystatechange = function()
     {
         if(4 == ajax.readyState)
