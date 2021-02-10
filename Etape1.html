@@ -3,118 +3,8 @@
 <head>
 	<meta charset="utf-8">
     <script src="script/Aide-contextuelle.js"></script>
+	<link rel="stylesheet" href="css/Inscription.css">
 	<title>page web rally</title>
-    
-	<style>
-    legend
-    {
-        
-       color:white;    
-        
-    }
-    div
-    {
-        
-        color:white;    
-    }
-    .boutondiv
-    {
-        margin:auto;
-        display: block;
-        text-align: center;
-        
-        
-    }
-	.bouton 
-	{
-		display:inline-block;
-		text-decoration:none;
-		background-color:gray;
-		color :black;
-		cursor:pointer;
-        text-align: :center;
-        border-radius:2px;
-        
-	}
-	*
-	{
-		padding:0px;
-		margin:0px;
-	}
-	label
-	{
-		display:inline-block;
-		width:100px;
-		text-align:right;
-	}
-	div
-	{
-		margin-bottom:5px;
-		width:350px;
-	}
-	fieldset
-	{
-		width:350px;
-		margin-left:5px;
-		padding-top:5px;
-		margin: 0 auto;
-        border-left-color: white;
-        border-right-color: white;
-        border-bottom-color: black;
-        border-top-color: black;
-	}
-	legend
-	{
-		margin-left:10px;
-	}
-	h1
-	{
-		text-align:center;
-        color:white;
-	}
-	.groupe-element
-	{
-		box-sizing:border-box;
-		width:auto;
-		padding:5px;
-		padding-top:5px;
-		margin:5px;
-	}
-	.groupe-element label
-	{
-		width:auto;
-	}
-	.groupe-element input[type=radio]
-	{
-		vertical-align:middle;
-		margin-right:20px;
-	}
-	.groupe-element input[type=checkbox]
-	{
-		vertical-align:middle;
-	}
-	input[type=submit]
-	{
-		display:block;
-		margin:5px auto;
-	}
-    html
-    {
-     background:url('images/DiRT_Rally_Background_That_Car.jpg') no-repeat center center fixed;  
-        
-    
-        
-    }
-    .aide
-    {
-            background-image:url(images/011.jpg);
-            border:solid black 2px;
-            color:white;
-            margin-top: 5px;
-            
-            display: none;
-    }
-	</style>
 </head>
 <body onload="intialiser()">
 	<h1>Inscription rally: Étape 1</h1>
@@ -141,16 +31,19 @@
 		
 		<fieldset class="groupe-element">
 		<legend>Genre</legend>
-			<div>
-                 
-                <label title="Subaru est une marque de voiture représenté par le bleu" id="etiquette" for="genre-Subaru"><span class="info-bulle">Subaru</span></label>
-				<input type="radio" name="genres" value="subaru" id="genre-subaru" statue="checked"> 
-               
-				<label  title="Mitsubishi est une marque de voiture représenté par le Rouge " id="etiquette-M" for="genre-Mitsubishi"><span class="info-bulle">Mitsubishi</span></label>
-				<input type="radio" name="genres" value="mitsubishi" id="genre-mitsubishi"> 
-                <div class="aide" id="aide"></div>
+			<div id="choix-marque">
+
+				<input type="radio" name="genres" value="subaru" id="genre-subaru"> 
+				<label title="Subaru est une marque de voiture représenté par le bleu" id="etiquette-S" for="genre-subaru" class="selecteur"><span class="info-bulle">Subaru</span></label>	
+				
+				 
+				<input type="radio" name="genres" value="mitsubishi" id="genre-mitsubishi">
+				<label title="Mitsubishi est une marque de voiture représenté par le Rouge" id="etiquette-M" for="genre-mitsubishi" class="selecteur" id="etiquette-M"><span class="info-bulle">Mitsubishi</span></label>	
+				
+				<div class="aide" id="aide"></div>
 			</div>
 		</fieldset>
+		
 		
 		<div>
 			<label for="genre-homme">Courriel : </label>

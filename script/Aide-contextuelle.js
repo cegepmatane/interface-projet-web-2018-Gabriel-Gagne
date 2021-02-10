@@ -4,7 +4,7 @@ var etiquette;
 function intialiser()
 {
     
-    etiquette = document.getElementById("etiquette");
+    etiquette = document.getElementById("etiquette-S");
     etiquetteM = document.getElementById("etiquette-M");
     aide = document.getElementById("aide");
    

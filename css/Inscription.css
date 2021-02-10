@@ -1,0 +1,153 @@
+legend
+{
+    
+   color:white;    
+    
+}
+div
+{
+    
+    color:white;    
+}
+.boutondiv
+{
+    margin:auto;
+    display: block;
+    text-align: center;
+    
+    
+}
+.bouton 
+{
+    display:inline-block;
+    text-decoration:none;
+    background-color:gray;
+    color :black;
+    cursor:pointer;
+    text-align: :center;
+    border-radius:2px;
+    
+}
+*
+{
+    padding:0px;
+    margin:0px;
+}
+label
+{
+    display:inline-block;
+    width:100px;
+    text-align:right;
+}
+div
+{
+    margin-bottom:5px;
+    width:350px;
+}
+fieldset
+{
+    width:300px;
+    margin-left:5px;
+    padding-top:5px;
+    margin: 0 auto;
+    border-left-color: white;
+    border-right-color: white;
+    border-bottom-color: black;
+    border-top-color: black;
+}
+legend
+{
+    margin-left:10px;
+}
+h1
+{
+    text-align:center;
+    color:white;
+}
+.groupe-element
+{
+    box-sizing:border-box;
+    width:auto;
+    padding:5px;
+    padding-top:5px;
+    margin:5px;
+}
+.groupe-element label
+{
+    width:auto;
+}
+.groupe-element input[type=checkbox]
+{
+    vertical-align:middle;
+}
+input[type=submit]
+{
+    display:block;
+    margin:5px auto;
+}
+html
+{
+ background:url('../images/DiRT_Rally_Background_That_Car.jpg') no-repeat center center fixed;  
+    
+
+    
+}
+.aide
+{
+        background-image:url(images/011.jpg);
+        border:solid black 2px;
+        color:white;
+        margin-top: 5px;
+        
+        display: none;
+}
+
+/* On fait disparaitre le rond a cliquer */
+#choix-marque input
+{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+
+/* On prepare les label qui vont devenir les images */
+#choix-marque label.selecteur
+{
+    display:inline-block;
+    width:256px;
+    height: 256px;
+    cursor:pointer;
+    opacity:0.5;
+}
+
+/* On specifie une image differente pour chaque radio */
+#choix-marque label#etiquette-S
+{
+    background-image:url('../images/subaru.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#choix-marque label#etiquette-M
+{
+    background-image:url('../images/mitsubishi.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*************************************/
+/* EFFET */
+/*************************************/
+
+/* On illumine le libelle survole */
+#choix-marque label.selecteur:hover
+{
+    opacity:1;
+}
+#choix-marque input:checked+label.selecteur
+{
+    opacity:1;
+}
+#choix-marque input:active+label.selecteur
+{
+    opacity:1;
+}
